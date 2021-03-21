@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Contact</title>
+</head>
+
+
+<body>
+    <header>
+        <h1>Contact</h1>
+    </header>
+    <nav>
+        <ul class="horizontal">
+            <li><a href="index.html">Terug naar de Homepage</a></li>
+            <li><a href="about.html">Hier een pagina met meer over mij</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Recepten:</h2>
+        <form name="contact" method="POST" data-netlify="true">
+            <p>
+                <label>Naam: <input type="text" value="voer hier uw naam in" name="naam" /></label>
+            </p>
+            <p>
+                <label>Email: <input type="email" value="voer hier uw email in" name="email" /></label>
+            </p>
+            <p>
+                <label for="telefoonnummer">voer hier uw telefoonnummer in:</label><br>
+                <input type="tel" id="phone" name="phone" placeholder="0123-45678" pattern="[0-9]{4}-[0-9]{6}" required>
+            </p>
+            <p>
+                <label for="uw geboortedatum">leeftijd: <input type="number" value="00"></label>
+            </p>
+            <p>
+                <label>uw geboortedatum: <input type="date" /></label>
+            </p>
+
+            <p>
+                <label>Uw geslacht:<br>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Anders</label></label>
+            </p>
+            <p>
+                <label>Uw favoriete cuisine:<br>
+                    <input type="checkbox" id="french" name="cuisine" value="french">
+                    <label for="french">Franse keuken</label><br>
+                    <input type="checkbox" id="italian" name="cuisine" value="italian">
+                    <label for="italian">Italiaanse keuken</label><br>
+                    <input type="checkbox" id="spanish" name="cuisine" value="spanish">
+                    <label for="spanish">Spaanse keuken</label><br>
+                    <input type="checkbox" id="arabic" name="cuisine" value="arabic">
+                    <label for="arabic">Arabische keuken</label>
+                </label>
+            </p>
+            <p>
+                <label for="favoriete kleur van schort">Selecteer uw favoriete kleur schort:</label>
+                <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+            </p>
+            <p>
+                <label for="Biografie: ">Biografie:<br>
+                    <textarea rows="10" cols="30">Uw biografie...
+                        </textarea>
+                </label>
+            </p>
+            <p>
+                <label for="recept">upload uw laatste recept: <input type="file" /></label>
+            </p>
+            <p>
+                <label for="url">url naar je recepten website: </label>
+                <input type="url" name="url" id="url" placeholder="https://voorbeeld.com" pattern="https://.*" size="30"
+                    required>
+            </p>
+            <p>
+                <button type="submit">Verzenden</button>
+                <button type="reset">Reset</button>
+            </p>
+
+        </form>
+    </main>
+
+    <footer>
+        &copy;Martijn den Breejen
+    </footer>
+</body>
+
+</html>

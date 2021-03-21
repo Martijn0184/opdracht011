@@ -1,0 +1,43 @@
+.blogpost
+{
+    width: 300px;
+    display:flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.b1
+{
+    margin-left: 20px;
+    padding: 1em;
+    border: 1px solid black;
+    flex-grow: 20; 
+}
+
+.b2
+{
+    margin-left: 20px;
+    padding: 1em;
+    border: 1px solid black;
+    flex-grow: initial;
+}
+
+.b3
+{
+    margin-left: 20px;
+    padding: 1em;
+    border: 1px solid black;
+}
+.b4
+{
+    margin-left: 20px;
+    padding: 1em;
+    border: 1px solid black;
+    align-self: flex-end;
+}
+.b5
+{
+    margin-left: 20px;
+    padding: 1em;
+    border: 1px solid black;
+}
